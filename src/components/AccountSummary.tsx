@@ -1,19 +1,18 @@
 import React from 'react';
-import { Card, CardContent, Typography } from '@mui/material';
 
 interface AccountSummaryProps {
-  balance: number;
+    balance: number;
 }
 
 const AccountSummary: React.FC<AccountSummaryProps> = ({ balance }) => {
-  return (
-    <Card>
-      <CardContent>
-        <Typography variant="h6">Account Summary</Typography>
-        <Typography variant="body1">Balance: ${balance.toFixed(2)}</Typography>
-      </CardContent>
-    </Card>
-  );
+    return (
+        <div className="card">
+            <div className="card-body">
+                <h6 className="card-title">Account Summary</h6>
+                <p className="card-text">Balance: ${balance.toFixed(2)}</p>
+            </div>
+        </div>
+    );
 };
 
 export default AccountSummary;

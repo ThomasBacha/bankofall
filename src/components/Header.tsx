@@ -1,13 +1,14 @@
 import React from 'react';
-import { AppBar, Toolbar, Typography } from '@mui/material';
 
 const Header: React.FC = () => {
     return (
-        <AppBar position="static">
-            <Toolbar>
-                <Typography variant="h6">Bank App</Typography>
-            </Toolbar>
-        </AppBar>
+        <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div className="container">
+                <a className="navbar-brand" href="#">
+                    Bank App
+                </a>
+            </div>
+        </nav>
     );
 };
 
