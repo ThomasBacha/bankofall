@@ -36,6 +36,7 @@ const Dashboard: React.FC = () => {
                         <button className="btn btn-secondary" style={buttonStyling}>
                             Make a Withdrawal
                         </button>
+                        
                     </div>
                 </div>
             </div>
