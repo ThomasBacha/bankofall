@@ -1,0 +1,9 @@
+.landing-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.8); /* semi-transparent white background */
+    text-align: center; /* center the text */
+    border-radius: 10px; /* rounded corners */
+  }
+  

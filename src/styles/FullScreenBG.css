@@ -1,0 +1,30 @@
+  
+  .fullscreen-bg {
+    background: linear-gradient(to bottom, #ED9B52 60%,  #FFDAB9 80%); /* Change as per your gradient needs */
+
+    /* background: linear-gradient(to right, #f0e6d6, #dcd0ba); paper-like background gradient */
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    border: 15px solid #8b4513; /* border resembling a journal cover */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* subtle shadow to give depth */
+    overflow: hidden; /* ensures the content does not overflow the border */
+  }
+  
+  .fullscreen-bg > * {
+    position: relative;
+    padding: 20px; /* internal padding to keep content away from the edges */
+  }
+  
+  /* Optionally, you can add a repeating background image of a subtle paper texture */
+  /* Just make sure the image path is correct */
+  /*
+  .fullscreen-bg {
+    background-image: url('path/to/your/paper-texture.png');
+    background-repeat: repeat;
+  }
+  */
+  

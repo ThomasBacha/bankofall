@@ -9,3 +9,12 @@
     height: 200px;
   }
 
+  .mainTitle{
+    font-size: 2rem;
+    font-weight: 900;
+    text-shadow: #000000 1px 0 10px;
+    color: #000000;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-family: cursive;
+  }
