@@ -1,9 +1,12 @@
   
   .fullscreen-bg {
-    background: linear-gradient(to bottom, #ED9B52 60%,  #FFDAB9 80%); /* Change as per your gradient needs */
-
-    /* background: linear-gradient(to right, #f0e6d6, #dcd0ba); paper-like background gradient */
+    background-image: 
+    url("https://images.unsplash.com/photo-1472289065668-ce650ac443d2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHdlYnNpdGUlMjBiYWNrZmdyb3VuZHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     position: fixed;
+
     top: 0;
     right: 0;
     bottom: 0;

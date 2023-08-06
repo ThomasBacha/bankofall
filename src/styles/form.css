@@ -18,13 +18,17 @@
 /* submit button will contain colorful mediveal taste */
 
 input[type="submit"] {
-  width: 100%;
+  display: block;  /* Make the input block-level so it takes up the full line */
+  margin-left: auto;  /* Set the left margin to auto */
+  margin-right: auto; /* Set the right margin to auto */
+  width: 40%;
   background: linear-gradient(to right, #7d7cda, #6c113c); /* gradient background */
   color: white;
   padding: 14px 20px;
-  margin: 8px 0;
+  margin-top: 8px;
+  margin-bottom: 8px;
   border: none;
-  border-radius: 4px;
+  border-radius: 20px;
   cursor: pointer;
   font-size: xx-large;
   font-family: 'Times New Roman', Times, serif; /* a more classic font style */
@@ -33,6 +37,7 @@ input[type="submit"] {
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); /* shadow to give depth to the button */
   transition: all 0.3s; /* smooth transition for hover effect */
 }
+
 
 input[type="submit"]:hover {
   background: linear-gradient(to right, #e682b1, #7d7cda); /* inverted gradient on hover */
