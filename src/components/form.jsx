@@ -1,12 +1,12 @@
 import React from "react";
 import '../styles/form.css'
 
-// const nicefont = {    fontFamily: "'Cedarville Cursive', cursive",
-// fontSize: '16px'}
-
 function Form() {
   return (
+  
+
     <div className="form">
+    
       <form action="/action_page.php">
         <label  htmlFor="fname">Ups</label>
         <textarea className="text" id="fname" name="Ups" placeholder="Your Great Ideas..." />
