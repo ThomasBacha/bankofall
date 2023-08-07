@@ -1,33 +1,50 @@
-  
-  .fullscreen-bg {
-    background-image: 
-    url("https://images.unsplash.com/photo-1472289065668-ce650ac443d2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHdlYnNpdGUlMjBiYWNrZmdyb3VuZHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: fixed;
+.fullscreen-bg {
+  background-image: url("https://images.unsplash.com/photo-1472289065668-ce650ac443d2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHdlYnNpdGUlMjBiYWNrZmdyb3VuZHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  border: 15px solid #8b4513;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Ensure the content does not overflow the border */
+  overflow-y: scroll; /* Add vertical scroll behavior */
+}
 
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-    border: 15px solid #8b4513; /* border resembling a journal cover */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* subtle shadow to give depth */
-    overflow: hidden; /* ensures the content does not overflow the border */
-  }
-  
-  .fullscreen-bg > * {
-    position: relative;
-    padding: 20px; /* internal padding to keep content away from the edges */
-  }
-  
-  /* Optionally, you can add a repeating background image of a subtle paper texture */
-  /* Just make sure the image path is correct */
-  /*
-  .fullscreen-bg {
-    background-image: url('path/to/your/paper-texture.png');
-    background-repeat: repeat;
-  }
-  */
-  
+.fullscreen-bg > * {
+  position: relative;
+  padding: 20px;
+}
+
+/* Style for Webkit browsers (Chrome, Safari) */
+.fullscreen-bg::-webkit-scrollbar {
+  width: 8px;
+}
+
+.fullscreen-bg::-webkit-scrollbar-thumb {
+  background-color: #333; /* Dark color for the scrollbar thumb */
+  border-radius: 10px;
+}
+
+.fullscreen-bg::-webkit-scrollbar-track {
+  background-color: #d51818; /* Light color for the scrollbar track */
+  border-radius: 10px;
+}
+
+/* Style for Firefox */
+.fullscreen-bg {
+  scrollbar-width: thin;
+  scrollbar-color: #333 #f2f2f2;
+}
+
+.fullscreen-bg::-webkit-scrollbar-thumb:vertical {
+  background-color: #000000;
+}
+
+.fullscreen-bg::-webkit-scrollbar-track:vertical {
+  background-color: #7d20e7;
+}
